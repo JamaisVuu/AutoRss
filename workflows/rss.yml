@@ -1,7 +1,7 @@
 on:
   rss:
     url:
-      - RSS: https://feed.hamibot.com/api/feeds/6131bc381269c358aa0df478
+      - RSS: https://rss-five-blue.vercel.app/zhihu/posts/people/knowyourself-1
 jobs:
   request:
     name: Make a HTTP Request
