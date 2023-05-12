@@ -1,7 +1,7 @@
 on:
   rss:
     url:
-      - RSS 订阅链接 https://feed.hamibot.com/api/feeds/6131bc381269c358aa0df478
+      - RSS https://feed.hamibot.com/api/feeds/6131bc381269c358aa0df478
 jobs:
   request:
     name: Make a HTTP Request
