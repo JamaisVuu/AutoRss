@@ -1,22 +1,21 @@
-name: Send a HTTP Request when new RSS item is detected
 on:
   rss:
-    url: 
-      - RSS https://rss-five-blue.vercel.app/zhihu/posts/people/knowyourself-1
+    url:
+      - RSS 订阅链接 https://feed.hamibot.com/api/feeds/6131bc381269c358aa0df478
 jobs:
   request:
-    name: Request
+    name: Make a HTTP Request
     runs-on: ubuntu-latest
     steps:
-      - name: Make a HTTP Request      
-        uses: actionsflow/axios@main
+      - name: Make a HTTP Request
+        uses: actionsflow/axios@v1
         with:
-          url: https://cubox.pro/c/api/save/j1e6dt99t3kaln
+          url: 你的 Cubox API 链接
           method: POST
           body: |
             {
               "type":"url",
               "content":"${{ on.rss.outputs.link }}",
               "title": "${{ on.rss.outputs.title }}",
-              "folder":"RSS-Cuboxfolder"
+              "folder":"你希望保存文章的文件夹"
             }
