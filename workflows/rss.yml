@@ -10,7 +10,7 @@ jobs:
       - name: Make a HTTP Request
         uses: actionsflow/axios@v1
         with:
-          url: https://cubox.pro/c/api/save/j1e6dt99t3kaln
+          url: ${{ secrets.APIPROTECT }}
           method: POST
           body: |
             {
