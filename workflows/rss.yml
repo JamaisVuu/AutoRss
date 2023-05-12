@@ -1,21 +1,22 @@
+name: Send a HTTP Request when new RSS item is detected
 on:
   rss:
-    url:
+    url: 
       - RSS https://rss-five-blue.vercel.app/zhihu/posts/people/knowyourself-1
 jobs:
   request:
-    name: Make a HTTP Request
+    name: Request
     runs-on: ubuntu-latest
     steps:
-      - name: Make a HTTP Request
-        uses: actionsflow/axios@v1
+      - name: Make a HTTP Request      
+        uses: actionsflow/axios@main
         with:
           url: https://cubox.pro/c/api/save/j1e6dt99t3kaln
           method: POST
           body: |
             {
               "type":"url",
-              "content":"${{ on.rss.outputs.link }}", 
+              "content":"${{ on.rss.outputs.link }}",
               "title": "${{ on.rss.outputs.title }}",
               "folder":"RSS-Cuboxfolder"
             }
