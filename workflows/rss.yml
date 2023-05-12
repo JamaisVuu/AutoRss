@@ -1,7 +1,7 @@
 on:
   rss:
     url:
-      - RSS  https://feed.hamibot.com/api/feeds/6131bc381269c358aa0df478
+      - RSS: https://feed.hamibot.com/api/feeds/6131bc381269c358aa0df478
 jobs:
   request:
     name: Make a HTTP Request
@@ -10,12 +10,12 @@ jobs:
       - name: Make a HTTP Request
         uses: actionsflow/axios@v1
         with:
-          url: 你的 Cubox API 链接
+          url: https://cubox.pro/c/api/save/j1e6dt99t3kaln
           method: POST
           body: |
             {
               "type":"url",
               "content":"${{ on.rss.outputs.link }}",
               "title": "${{ on.rss.outputs.title }}",
-              "folder":"你希望保存文章的文件夹"
+              "folder":"RSSCuboxfolder"
             }
