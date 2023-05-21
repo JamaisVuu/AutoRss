@@ -2,6 +2,7 @@ on:
   rss:
     url:
       - https://rss-five-blue.vercel.app/zhihu/posts/people/knowyourself-1
+      - https://rss-five-blue.vercel.app/zhihu/people/answers/knowyourself-1
 jobs:
   request:
     name: Make a HTTP Request
