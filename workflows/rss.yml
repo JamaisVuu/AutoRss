@@ -3,7 +3,6 @@ on:
     url:
       - https://rss-five-blue.vercel.app/zhihu/posts/people/knowyourself-1
       - https://rss-five-blue.vercel.app/zhihu/people/answers/knowyourself-1
-      - http://www.jintiankansha.me/rss/GM2DEMZTGB6DCZLCHE2TGMZTGM3WIMTDGNSTIN3DGRRTIZTFG5SWKMJQGBSGENDEGYZGGZDBG43A====
 jobs:
   request:
     name: Make a HTTP Request
