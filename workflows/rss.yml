@@ -4,11 +4,7 @@ on:
       - https://rss-five-blue.vercel.app/zhihu/posts/people/knowyourself-1
       - https://rss-five-blue.vercel.app/zhihu/people/answers/knowyourself-1
       - https://rss-five-blue.vercel.app/medsci/40
-      - http://8.137.58.98:4000/feeds/MP_WXS_3213027136.atom
-      - http://8.137.58.98:4000/feeds/MP_WXS_3257586869.atom
-      - http://8.137.58.98:4000/feeds/MP_WXS_3202238386.atom
-      - http://8.137.58.98:4000/feeds/MP_WXS_3274473737.atom
-      - http://8.137.58.98:4000/feeds/MP_WXS_3091816442.atom
+      - https://wewerss.jamaisvu.website/feeds/all.atom
 jobs:
   request:
     name: Make a HTTP Request
