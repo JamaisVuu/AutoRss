@@ -1,9 +1,7 @@
 on:
   rss:
     url:
-      - https://rss-five-blue.vercel.app/medsci/40
       - https://werss.jamaisvu.top/feeds/all.atom
-      - https://weekly.tw93.fun/rss.xml
 jobs:
   request:
     name: Make a HTTP Request
