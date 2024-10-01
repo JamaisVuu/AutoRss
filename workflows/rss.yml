@@ -2,6 +2,7 @@ on:
   rss:
     url:
       - https://werss.jamaisvu.top/feeds/all.atom
+      - https://rss.jamaisvu.top/medsci/40/34
 jobs:
   request:
     name: Make a HTTP Request
