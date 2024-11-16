@@ -3,6 +3,7 @@ on:
     url:
       - https://werss.jamaisvu.top/feeds/all.atom
       - https://rss.jamaisvu.top/medsci/40/34
+      - https://momoyu.cc/api/hot/rss?code=MSw2LDcyLDExLDgsMjgsMjksNDcsODMsMyw1LDE4
 jobs:
   request:
     name: Make a HTTP Request
